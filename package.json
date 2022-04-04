@@ -1,0 +1,25 @@
+{
+  "name": "eventticketing",
+  "version": "1.0.0",
+  "description": "This application will allow users to manage the distribution and management of digital tickets through email and text. The basic functionality of this app would be:",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kumararoosh/EventTicketing.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kumararoosh/EventTicketing/issues"
+  },
+  "homepage": "https://github.com/kumararoosh/EventTicketing#readme",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.3",
+    "uuid": "^8.3.2"
+  }
+}
