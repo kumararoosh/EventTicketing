@@ -8,7 +8,8 @@ window.onload = function() {
     // firstNameElem.innerText = "First Name: " + params.firstName
     // lastNameElem.innerText = "Last Name: " + params.lastName
 
-    const url = "http://localhost:3000/users?id=" + params.id
+    // const url = "http://localhost:3000/users?id=" + params.id
+    const url = "https://870uucrev1.execute-api.us-west-2.amazonaws.com/users/" + params.id
     var xmlHttp = new XMLHttpRequest();
     xmlHttp.open( "GET", url, false ); // false for synchronous request
     xmlHttp.send( null );
