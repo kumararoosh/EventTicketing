@@ -17,7 +17,7 @@ window.onload = function() {
 
     parsed = JSON.parse(xmlHttp.responseText)
     data = parsed.Item
-    console.log(data)
+    // console.log(data)
     
     firstNameElem.innerText = "First Name: " + data.firstName
     lastNameElem.innerText = "Last Name: " + data.lastName
