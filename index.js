@@ -31,3 +31,12 @@ window.onload = function() {
         checkedInElem.innerText = 'Checked In'
     }
 }
+
+function handleClick() {
+    const urlSearchParams = new URLSearchParams(window.location.search);
+    const params = Object.fromEntries(urlSearchParams.entries());    
+    const url = "https://870uucrev1.execute-api.us-west-2.amazonaws.com/checkin/" + params.id
+    var xmlHttp = new XMLHttpRequest();
+    xmlHttp.open( "PUT", url, false ); // false for synchronous request
+    xmlHttp.send( null );
+}
