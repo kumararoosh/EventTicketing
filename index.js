@@ -32,7 +32,7 @@ function submitPassword() {
     var username = document.getElementById("username").value;
     var password = document.getElementById("password").value;
 
-    const url = "https://870uucrev1.execute-api.us-west-2.amazonaws.com/users/" + username + "/" + password
+    const url = "https://870uucrev1.execute-api.us-west-2.amazonaws.com/login/" + username + "/" + password
     var xmlHttp = new XMLHttpRequest();
     xmlHttp.open( "GET", url, false ); // false for synchronous request
     xmlHttp.send( null );
