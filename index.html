@@ -2,10 +2,18 @@
 <script src="index.js"></script>
 <html>
     <body>
-        <h1>Ticket Details</h1>
-        <h2 id="firstName">First Name</h2>
-        <h2 id="lastName">Last Name</h2>
-        <h2 id="checkedIn"></h2>
-        <button onclick=handleClick()>Check In</button>
+        <div id="details">
+            <h1>Ticket Details</h1>
+            <h2 id="firstName">First Name</h2>
+            <h2 id="lastName">Last Name</h2>
+            <h2 id="checkedIn"></h2>
+            <button onclick=handleClick()>Check In</button>
+        </div>
+        <div id="signon">
+            <h2>Username: <input id="username" type="text"/> </h2>
+            <h2>Password: <input id="password" type="password"/></h2> 
+            <button onclick=submitPassword()>Submit</button>
+        </div>
+        <button onclick=hide()>Hide</button>
     </body>
 </html>
