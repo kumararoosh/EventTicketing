@@ -29,8 +29,8 @@ function hide() {
 }
 
 function submitPassword() {
-    var username = document.getElementById("username");
-    var password = document.getElementById("password");
+    var username = document.getElementById("username").value;
+    var password = document.getElementById("password").value;
 
     const url = "https://870uucrev1.execute-api.us-west-2.amazonaws.com/users/" + username + "/" + password
     var xmlHttp = new XMLHttpRequest();
