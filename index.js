@@ -23,11 +23,6 @@ function handleClick() {
     xmlHttp.send( null );
 }
 
-function hide() {
-    var details = document.getElementById('details')
-    details.style.visibility = 'hidden'
-}
-
 function submitPassword() {
     var username = document.getElementById("username").value;
     var password = document.getElementById("password").value;
