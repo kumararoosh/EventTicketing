@@ -70,7 +70,7 @@ function gatherData() {
     const params = Object.fromEntries(urlSearchParams.entries());
 
     var firstNameElem = document.getElementById('firstName')
-    var lastNameElem = document.getElementById('lastName')
+    var studentIdElem = document.getElementById('studentId')
     var checkedInElem = document.getElementById('checkedIn')
 
     const url = "https://870uucrev1.execute-api.us-west-2.amazonaws.com/users/" + params.id
@@ -81,8 +81,8 @@ function gatherData() {
     parsed = JSON.parse(xmlHttp.responseText)
     data = parsed.Item
     
-    firstNameElem.innerText = "First Name: " + data.firstName
-    lastNameElem.innerText = "Last Name: " + data.lastName
+    firstNameElem.innerText = "Name: " + data.name
+    studentIdElem.innerText = "Student Id: " + data.studentId
 
     if (data.checkedIn == "1") {
         checkedInElem.style.color = 'red'
