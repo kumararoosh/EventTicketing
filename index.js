@@ -9,6 +9,7 @@ window.onload = function() {
 
         // Send the cookie to get validated
         gatherData()
+        hideSignOn();
     }
 
     
@@ -39,13 +40,17 @@ function submitPassword() {
         alert("Wrong password")
         
     } else {
-        var details = document.getElementById('details')
-        details.style.visibility = 'visible'
-        var login = document.getElementById('signon')
-        login.style.visibility = 'hidden'
+        hideSignOn();
         document.cookie = "password=authenticated"
         gatherData()
     }
+}
+
+function hideSignOn() {
+    var details = document.getElementById('details')
+    details.style.visibility = 'visible'
+    var login = document.getElementById('signon')
+    login.style.visibility = 'hidden'
 }
 
 
