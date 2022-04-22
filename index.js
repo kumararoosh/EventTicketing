@@ -43,6 +43,7 @@ function submitPassword() {
         details.style.visibility = 'visible'
         var login = document.getElementById('signon')
         login.style.visibility = 'hidden'
+        document.cookie = "password=authenticated"
         gatherData()
     }
 }
